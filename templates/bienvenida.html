@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="background-cat">
+        <div class="welcome-container">
+            <h2>¡Bienvenida, {{ username }}!</h2>
+            <p>Nos alegra que te unas a nuestra comunidad de amantes de gatitos. 🐱</p>
+            <img src="{{ url_for('static', filename='imagenes/gato2.jpeg') }}" alt="Un gatito dándote la bienvenida" class="welcome-cat">
+            <p>Un gatito dándote la bienvenida.</p>
+            <a href="{{ url_for('logout') }}" class="logout-button">Cerrar sesión</a>
+        </div>
+    </div>
+</body>
+</html>
